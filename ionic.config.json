@@ -1,0 +1,7 @@
+{
+  "name": "calcsimples",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
