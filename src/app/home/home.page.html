@@ -7,14 +7,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item>
+    <ion-input label="Primeiro Número" [(ngModel)]="n1" labelPlacement="floating" placeholder="Digite o primeiro número" type="number"></ion-input>
+  </ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-item>
+  <ion-input label="Segundo Número" [(ngModel)]="n2" labelPlacement="floating" placeholder="Digite o segundo número" type="number"></ion-input>
+</ion-item>
+
+<ion-button expand="block" (click)="somar()">Somar</ion-button>
+
+<ion-label>{{res}}</ion-label>
 </ion-content>
